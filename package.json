@@ -1,0 +1,28 @@
+{
+  "name": "javascript-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apitests": "npx playwright test --grep @API --headless",
+    "webtests": "npx palywright test tests/practiceevent.spec.js --headless",
+    "tsproject": "npx playwright test tests/clientPageobject.spec.ts",
+    "cucumber": "cucumber-js tests/features"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/identity": "^4.13.3",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.4",
+    "allure-playwright": "^3.12.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "chromium": "^3.0.3",
+    "exceljs": "^4.4.0",
+    "typescript": "^7.0.2"
+  }
+}

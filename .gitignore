@@ -1,0 +1,11 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/allure-report/
+/cucumber-report.html
+/first ss in cucumber.png
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
