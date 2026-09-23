@@ -1,0 +1,21 @@
+{
+  "name": "javascript-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apitests": "npx playwright test --grep @API",
+    "webtests": "npx palywright test tests/practiceevent.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "allure-playwright": "^3.12.2"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
