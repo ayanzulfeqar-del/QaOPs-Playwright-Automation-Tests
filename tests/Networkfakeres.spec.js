@@ -85,7 +85,7 @@ test("2nd netwrok intercept test", async ({ page }) => {
   await page.pause();
 });
 
-// route abort method
+// route abort method is very useful
 test("3rd netwrok intercept test", async ({ page }) => {
   await page.route("**/*.{jpeg}", (route) => route.abort());
   const email = "anshika@gmail.com";
