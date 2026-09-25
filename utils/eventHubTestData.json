@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://eventhub.rahulshettyacademy.com",
+  "accounts": {
+    "eventOwner": {
+      "email": "gmail@gmail.com",
+      "password": "User12@?"
+    },
+    "secondary": {
+      "email": "you@gmail.com",
+      "password": "User12@?"
+    }
+  },
+  "event": {
+    "title": "QA Automation Summit",
+    "description": "Hands-on Playwright and API testing workshop for QA engineers.",
+    "category": "Conference",
+    "city": "Lahore",
+    "venue": "Expo Center Lahore, Hall 2",
+    "dateTime": "2026-10-30T10:00",
+    "price": "75",
+    "totalSeats": "100"
+  },
+  "booking": {
+    "fullName": "QA Automation Tester",
+    "email": "gmail@gmail.com",
+    "phone": "+92 300 1234567",
+    "tickets": 1
+  }
+}

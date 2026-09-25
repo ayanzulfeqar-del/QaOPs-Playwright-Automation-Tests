@@ -6,6 +6,7 @@
   "scripts": {
     "apitests": "npx playwright test --grep @API --headless",
     "webtests": "npx palywright test tests/practiceevent.spec.js --headless",
+    "eventhub": "npx playwright test tests/eventhub.e2e.spec.js",
     "tsproject": "npx playwright test tests/clientPageobject.spec.ts",
     "cucumber": "cucumber-js tests/features"
   },

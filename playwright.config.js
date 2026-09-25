@@ -1,3 +1,4 @@
+const { channel } = require("node:diagnostics_channel");
 
 
 /**
@@ -19,10 +20,13 @@ const config = {
   reporter: 'html',
   ignoreHTTPSErrors: true,
   use: {
-    headless: true,
     screenshot: 'on',
     trace: 'retain-on-failure',
   },
+  use:{
+
+    channel: 'chrome',
+  }
 };
 
 module.exports = config;
