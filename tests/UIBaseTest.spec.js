@@ -67,12 +67,10 @@ const phonechec= page.locator('#forms-comm-phone');
 // FROM SELECTION 
 await page.locator('select#forms-country').click();
 await page.locator('select#forms-country').selectOption("United States");
-// await page.pause();
 // RADIO BUTTON CHECKED OR NOT 
 await emailcheck.check();
 console.log(await emailcheck.isChecked());
 await expect(emailcheck).toBeChecked();
-// await page.pause();
 await phonechec.check();
 await expect(phonechec).toBeChecked();
 })
@@ -112,7 +110,6 @@ for (let i = 0; i < count; ++i) {
     if (await products.nth(i).locator('h3').textContent() === productname)
    { 
         await products.nth(i).locator('text=Add').click();
-        await page.pause();
         break;
     }
 }
@@ -152,9 +149,7 @@ await expect(page.locator('.cartSection h3')).toBeVisible();
     await page.locator('.ta-results').click();
    await page.locator('input.input.txt.text-validated').first().waitFor()
    await page.locator('input.input.txt.text-validated').first().fill('4542 9931 9292 2293');
-  //  await page.pause();
   await page.locator('select.input.ddl').first().click();
 await page.locator('select.input.ddl').nth('0').selectOption('04');
-    await page.pause();
 
   })
