@@ -18,4 +18,3 @@ module.exports = defineConfig(
     ],
   }
 );
-module.exports = defineConfig();
