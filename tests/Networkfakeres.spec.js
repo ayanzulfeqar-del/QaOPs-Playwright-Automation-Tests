@@ -1,5 +1,5 @@
 const { test, expect, request } = require("@playwright/test");
-const noordermsg = { data: [], message: "No Orders" };
+const noordermsg = { data: [], message: "No Orders"}; 
 const loginPayload = {
   userEmail: "anshika@gmail.com",
   userPassword: "Iamking@000",
@@ -100,4 +100,4 @@ test("3rd netwrok intercept test", async ({ page }) => {
   await page.waitForLoadState("networkidle");
   await page.locator(".card-body b").first().waitFor();
 });
-
+ await page.getByRole("button", {name:"orders"}).click();
